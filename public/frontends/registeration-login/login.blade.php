@@ -92,7 +92,7 @@ h3 {
     session_start();
     // When form submitted, check and create user session.
     if (isset($_POST['username'])) {
-        $username = stripslashes($_REQUEST['username']);    // removes backslashes
+        $username = stripslashes($_REQUEST['username']);    // removes backslashes here
         $username = mysqli_real_escape_string($con, $username);
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($con, $password);
